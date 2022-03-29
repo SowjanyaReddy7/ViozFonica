@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="nav3.css" rel="stylesheet">
+  <style>@charset "ISO-8859-1";
+
+
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+height: 50px;
+line-height: 45px;
+background-color: #00BFFF;
+font-family: Arial, helvetica, sans-serif;
+font-size: 30px;
+}li{
+float: right;
+border-right: 1px solid #00BFFF;
+}
+a{
+display: block;
+padding:0 30px;
+color:#151B54;
+text-decoration: inherit;
+}
+a:hover {
+background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+<<body><div>
+<img  src="C:\Users\user\Downloads\home1.png" height="120" width="130" align="top">
+</div>
+
+
+
+  <ul>
+      <li>
+        <a  href="#">Login</a>
+      </li>
+      <li >
+        <a href="#">SignUp</a>
+      </li>
+      <li>
+        <a  href="#">Dongle</a>
+      </li>
+      <li>
+        <a href="#">Postpaid</a>
+      </li>
+      <li>
+        <a href="#">Prepaid</a>
+      </li>
+      <li >
+        <a  href="#">About Us</a>
+      </li>
+      <li >
+        <a href="#">Home</a>
+      </li>
+    </ul><hr>
+    
+ 
+</body>
+</html>
