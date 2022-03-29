@@ -1,0 +1,27 @@
+package com.org.Voizfonica;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+@Service
+public class LoginService {
+	@Autowired
+	private RegisterRepository LoginRepo;
+	
+	public List<Register> allRegister(){
+		return LoginRepo.findAll();
+	}
+	
+	public String verifyStudent(String email, String password) {
+		String res="user id or password not matching";
+		Register login=LoginRepo.findByEmail(email);
+		String tempass=login.getPassword();
+		if (tempass.equals(password)) {
+			res="logged in sucessfully";
+		}
+		return res;
+}
+}
