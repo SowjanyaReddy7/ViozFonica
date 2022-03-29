@@ -1,0 +1,41 @@
+package com.org.Voizfonica;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@CrossOrigin
+@RequestMapping(value = "/api")
+@ComponentScan
+
+public class LoginWebController {
+
+	
+	@GetMapping("/login") 
+	public String getlogin(){ 
+		return "login"; 
+		}
+	
+	@GetMapping("/prepaid") 
+	public String getprepaid(){ 
+		return "prepaid"; 
+		}
+	
+	@GetMapping("/postpaid") 
+	public String getpostpaid(){ 
+		return "postpaid"; 
+		}
+	
+	@GetMapping("/dongel") 
+	public String getdongel(){ 
+		return "dongel"; 
+		}
+	
+	@GetMapping("/home") 
+	public String getdhome(){ 
+		return "home"; 
+		}
+}
